@@ -1,0 +1,98 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: cadetblue;
+    color: white;
+    padding: 0 40px;
+}
+
+header h2 {
+    font-size: x-large;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+header nav a {
+    color: white;
+}
+
+#task-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    box-sizing: border-box;
+}
+
+.task-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+    height: 100px;
+    width: 500px;
+    box-shadow: 7px 6px 25px -6px rgba(0,0,0,0.75);
+    border-radius: 15px;
+}
+
+@media (min-width:750px){
+    .task-card{
+        width: 700px;
+    }
+}
+
+.task-header h3 {
+    font-size: xx-large;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-form {
+    height: 300px;
+    width: 400px;
+    margin: 100px auto;
+    box-shadow: 7px 6px 25px -6px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#task-form input {
+    border-radius: 5px;
+    padding: 4px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+#task-form textarea {
+    width: 50%;
+}
+
+#task-form button {
+    width: 25%;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 4px;
+}
